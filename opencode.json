@@ -1,0 +1,42 @@
+{
+{
+" $schema ": " https :// opencode . ai / config . json ",
+" model ": " aristote / qwen -3.6 -35 b - instruct ",
+" small_model ": " aristote / qwen -3.6 -35 b - instruct ",
+" autoupdate ": " notify ",
+" compaction ": {
+" auto ": true ,
+" prune ": true ,
+" reserved ": 8192
+},
+" tools ": {
+" task ": false ,
+" webfetch ": false
+},
+" provider ": {
+" aristote ": {
+" npm ": " @ai - sdk / openai - compatible ",
+" name ": " Aristote ",
+" options ": {
+" baseURL ": " https :// llm . aristote . education / v1 ",
+" apiKey ": " sk ... c o m p l t e r",
+" timeout ": 600000 ,
+" chunkTimeout ": 60000
+},
+" models ": {
+" qwen -3.6 -35 b - instruct ": {
+" name ": " Qwen 3.6 35 B Instruct ",
+" limit ": {
+" context ": 262144 ,
+" output ": 65536
+}
+},
+" gemma -4 -31 b ": {
+" name ": " Gemma 4 31 B ",
+" limit ": {
+" context ": 131072  ,
+" output ": 16384
+}
+}
+}
+}
