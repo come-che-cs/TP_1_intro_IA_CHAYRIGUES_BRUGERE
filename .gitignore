@@ -1,2 +1,3 @@
 .venv
+projet/__pycache__
 opencode.json

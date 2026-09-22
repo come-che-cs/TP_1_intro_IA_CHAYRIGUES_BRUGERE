@@ -5,7 +5,7 @@ def test_is_palindrome_simple():
 
 
 def test_is_palindrome_with_spaces():
-    assert is_palindrome("un roc si biscornu") is True  # échoue à cause du bug
+    assert is_palindrome("un roc si biscornu") is True
 
 
 def test_is_palindrome_false():
